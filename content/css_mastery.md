@@ -13,53 +13,59 @@ Category: Note
 
 ## Background images and image replacement ##
 
-    :::css
-    #branding {
-        width: 700px;
-        height: 200px;
-        background:url(/images/branding.gif) no-repeat;
-    }
+```css
+#branding {
+    width: 700px;
+    height: 200px;
+    background:url(/images/branding.gif) no-repeat;
+}
+```
 
 ## Styling links ##
 
-    :::css
-    a[href^="http:"] {
-        background: url(images/externalLink.gif) no-repeat right top;
-        padding-right: 10px;
-    }
-    
+```css
+a[href^="http:"] {
+    background: url(images/externalLink.gif) no-repeat right top;
+    padding-right: 10px;
+}
+```
+
 ## Styling lists and creating nav bars ##
 
 #### add image to list ####
 
-    :::css
-    li {
-        background: url(bullet.git) no-repeat 0 50%;
-        padding-left: 30px;
-    }
+```css
+li {
+    background: url(bullet.git) no-repeat 0 50%;
+    padding-left: 30px;
+}
+```
 
 #### navbar ####
 文本
 
-    :::html
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
+```html
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+</ul>
+```
+
 样式
 
-    :::css
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        width: 720px;
-        background: #EAA819;
-    }
+```css
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+    background: #EAA819;
+}
 
-    ul li {
-        float: left;
-    }
+ul li {
+    float: left;
+}
+```
 
 ## Styling forms and data tables ##
 

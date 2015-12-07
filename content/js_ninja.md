@@ -8,19 +8,19 @@ and closures.
 ![javascript](images/javascript.png)
 
 ## Arming with testing and debugging ##
-    :::javascript
-    function log() {
-        try {
-            console.log.apply(console, arguments);
-        }catch(e){
-            try{
-                opera.postError.apply(opera, arguments);
-            }catche(e){
-                alert(Array.prototype.join.call(arguments, " "));
-            }
+```javascript
+function log() {
+    try {
+        console.log.apply(console, arguments);
+    }catch(e){
+        try{
+            opera.postError.apply(opera, arguments);
+        }catche(e){
+            alert(Array.prototype.join.call(arguments, " "));
         }
     }
-
+}
+```
 ## Functions are fundamental ##
 
 * The scope of declaration within a function differs from that of most
@@ -65,8 +65,10 @@ and closures.
 * Partially applying functions
 * Overriding function behavior
 * Immediate function
-  :::javascript
-  (function(){})()
+
+Example:
+`(function(){})()`
+  
   1. Temporary scope and private variables
   2. Loops
   3. Library wrapping
@@ -76,9 +78,10 @@ and closures.
 
 ## Wrangling regular expressions ##
 
-    :::javascript
-    var re1 = /test/i;
-    var re2 = new RegExp("text", "i");
+```javascript
+var re1 = /test/i;
+var re2 = new RegExp("text", "i");
+```
 
 ## Taming threads and timers ##
 
